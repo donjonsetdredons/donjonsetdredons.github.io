@@ -1,0 +1,212 @@
+@font-face {
+	font-family: "Carattere";
+	src: url("assets/fonts/Carattere-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Chawp";
+	src: url("assets/fonts/chawp.otf");
+}
+
+html {
+	margin; 0;
+	padding: 0;
+	font-family: sans-serif;
+	text-align: center;
+	background-color: lightgray;
+	height: 100%;
+	scroll-padding-top: 7.5cm;
+	scroll-behavior: smooth;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('assets/background.jpg');
+	background-size: 20em;
+	background-attachment: fixed;
+
+	--dark: #021a33;
+	--light: white;
+}
+
+body {
+	padding: 0;
+	margin: 0 auto;
+	max-width: 134ex;
+	background-color: var(--light);
+	box-shadow: 0 0 2em 0 black;
+}
+
+body > main :link, body > main :visited {
+	text-decoration: none;
+	color: var(--dark);
+}
+
+body :link:hover {
+	text-decoration: underline;
+}
+
+body > header {
+	position: sticky;
+	top: 0;
+	left: 20%;
+	right: 20%;
+	height: 7cm;
+	background-color: var(--light);
+	text-align: center;
+}
+
+body > main > section.warning {
+	margin: 2em auto;
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+	font-size: larger;
+}
+
+body > header .banner {
+	margin-top: 1cm;
+	height: 4.5cm;
+}
+
+body > header > nav {
+	background-color: var(--dark);
+}
+
+body > header > nav > ul {
+	padding: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+body > header > nav > ul > li {
+	padding: 1ex;
+	font-family: "Chawp";
+	font-variant: small-caps;
+	display: inline-block;
+}
+
+body > header > nav :link, body > header > nav :visited {
+	text-decoration: none;
+	color: var(--light);
+}
+
+body > main {
+	padding: 0 1cm;
+}
+
+body > main > section {
+  text-align: justify;
+}
+
+body > footer {
+	padding: 1ex;
+	background-color: var(--dark);
+	color: var(--light);
+	font-size: xx-small;
+	text-align: center;
+}
+
+body > footer h2 {
+	font-variant: small-caps;
+	font-weight: normal;
+}
+
+address {
+	display: inline;
+}
+
+body > header > h1 {
+	margin: 0;
+}
+
+body > footer > ul {
+	display: flex;
+	padding: 0;
+	position: relative;
+	left: 35%;
+	width: 30%;
+	flex-direction: row;
+	justify-content: center;
+}
+
+body > footer > ul > li {
+	display: inline-block;
+	margin-left: 1ex;
+	margin-right: 1ex;
+}
+
+body > main h2 {
+	margin: 1em;
+	font-family: "Chawp";
+	font-variant: small-caps;
+	color: var(--dark);
+}
+
+body > main > .illustrations {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+body > main > .illustrations > * {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 1em 0;
+	height: 22ex;
+	padding: 1ex;
+	border: thin var(--dark) solid;
+	border-radius: 3px;
+	vertical-align: baseline;
+}
+
+body > main > .illustrations > figure > figcaption  {
+	font-size: small;
+	font-variant: small-caps;
+}
+
+figure img {
+	display: block;
+	margin: 0 auto;
+}
+
+figure figcaption {
+	margin: 0.5ex auto;
+}
+
+body > main > section > main > iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body > main > section#links > main > ul {
+	display: flex;
+	justify-content: center;
+}
+
+body > main > section#links > main > ul > li {
+	display: inline;
+	margin-left: 1ex;
+	margin-right: 1ex;
+}
+
+body > main > section > main > ul > li > a > img {
+	height: 64px;
+}
+
+a.partenaire > img {
+	border-radius: 50%;
+	box-shadow: 0 0 1em 0 black;
+}
+
+a.partenaire > img:hover {
+	transform: scale(1.25);
+}
+
+a.social > img {
+	border-radius: 50%;
+}
+
+a.social > img:hover {
+	box-shadow: 0 0 1em 0 white;
+	transform: scale(1.25);
+}
