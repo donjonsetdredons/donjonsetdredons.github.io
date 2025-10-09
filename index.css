@@ -33,12 +33,19 @@ body {
 	box-shadow: 0 0 2em 0 black;
 }
 
-body > main :link, body > main :visited {
-	text-decoration: none;
+body > main :link {
 	color: var(--dark);
 }
 
-body :link:hover {
+body > main > section :link {
+	text-decoration: underline;
+}
+
+body > main > aside.illustrations :link {
+	text-decoration: none;
+}
+
+body > main > aside.illustrations :link:hover {
 	text-decoration: underline;
 }
 
